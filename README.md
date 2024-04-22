@@ -1,38 +1,46 @@
-# create-svelte
+# Svelte Matching Game
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This project is a fun and interactive memory matching game built using Svelte. It's designed to challenge your memory and attention to detail through a grid of emoji cards that you must match in pairs. The game includes features like a countdown timer, game states (start, playing, paused, won, lost), and dynamic interaction based on user inputs.
 
-## Creating a project
+## Credits
 
-If you're seeing this, you've probably already done this step. Congrats!
+This game was inspired by a tutorial from [Joy Of Code](https://joyofcode.xyz/svelte-matching-game). A big thanks to them for their clear and informative guide on building interactive games with Svelte.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Getting Started
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To set up and run this project locally, follow these steps:
 
 ```bash
-npm run dev
+# Clone the project
+git clone <repository-url>
 
-# or start the server and open the app in a new browser tab
+# Navigate to the project directory
+cd path-to-your-project
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+Game Mechanics
+Start Game: Press the 'Play' button to start the game.
+Gameplay: Click on cards to turn them over and try to find matching pairs.
+Pause/Resume: Press the 'Escape' key to pause the game. Press it again to resume.
+Win/Lose Conditions: Match all pairs before the time runs out to win. The game ends if the timer reaches zero.
+Development
+This project is set up using create-svelte. Here are some commands you might find useful:
 
 ```bash
+# Start the development server and open the app in a new browser tab
+npm run dev -- --open
+
+# Build the app for production
 npm run build
+
+# Preview the production build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Feel free to modify, extend, and improve the game to your liking. Enjoy coding and playing your Svelte-based matching game!
